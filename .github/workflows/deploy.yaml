@@ -1,5 +1,5 @@
 name: Test project
-on: push 
+on: [push, workflow_dispatch] 
 jobs: 
     test:
         runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
                 cd second-action-react-app
                 yarn test
     deploy: 
-      needs: test
+      needs: test # deploy will run after successful execution of test. Otherwise, it will be skipped
       runs-on: ubuntu-latest
       steps: 
         - name: Get code from repo 
