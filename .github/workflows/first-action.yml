@@ -8,8 +8,9 @@ jobs:
     # on which environment to run 
     runs-on: ubuntu-latest
     steps:
-      - name: Print greeting 
-        run: echo "Hello World"
-      - name: Print goodbye
-        run: echo "Done with the first workflow. Bye!"
+      - name: Print greeting and goodbye 
+        run: | 
+            echo "Hello World"
+            echo "This was my first GitHub worklow. Bye" 
+      
   
