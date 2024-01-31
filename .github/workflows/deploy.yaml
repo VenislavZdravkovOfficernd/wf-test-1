@@ -17,6 +17,7 @@ jobs:
                 cd second-action-react-app
                 yarn test
     deploy: 
+      needs: test
       runs-on: ubuntu-latest
       steps: 
         - name: Get code from repo 
