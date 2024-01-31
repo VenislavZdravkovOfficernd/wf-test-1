@@ -13,4 +13,6 @@ jobs:
                 cd second-action-react-app
                 yarn install
             - name: Run tests 
-              run: npm test
+              run: | 
+                cd second-action-react-app
+                yarn test
