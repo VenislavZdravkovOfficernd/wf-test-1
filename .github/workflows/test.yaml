@@ -8,6 +8,8 @@ jobs:
               uses: actions/checkout@v4
             - name: Install node JS
               uses: actions/setup-node@v4
+            - name: Navegate to project folder 
+              run: cd second-action-react-app
             - name: Install dependencies 
               run: yarn install
             - name: Run tests 
