@@ -1,0 +1,15 @@
+name: First Workflow 
+# when to be executed 
+# workflow_dispatch - means manual execution 
+on: workflow_dispatch 
+jobs: 
+  # name of the job 
+  first-job: 
+    # on which environment to run 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting 
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done with the first workflow. Bye!"
+  
